@@ -1,5 +1,7 @@
 #логика работы ВСЕГО
 from Flask import render_template, request, redirect, url_for, flash
+from unicodedata import category
+
 from app import app, db, bcrypt
 from app.models import User
 from app.forms import LoginForm, RegistrationForm
