@@ -1,8 +1,7 @@
 from app import app, db
-from app.models import User
 
-with app.app_context():  # После первого запуска эту строку можно удалить
-    db.create_all()  # После первого запуска эту строку можно удалить
+with app.app_context():
+    db.create_all()  # Создаёт БД при первом запуске
 
 if __name__ == '__main__':
     app.run(debug=True)
